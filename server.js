@@ -42,9 +42,9 @@ const __dirname = path.dirname(__filename);
 /*console.log('directory-name ', __dirname);
 
 console.log(path.join(__dirname, '/dist', 'index.html'));*/
-app.use(express.static(path.join(__dirname,'.client/build')))
+app.use(express.static(path.join(__dirname,'./client/build')))
 app.get('*', function (req, res){
-   res.sendFile(path.join(__dirname,'.client/build/index.html'));
+   res.sendFile(path.join(__dirname,'./client/build/index.html'));
 });
 
 
